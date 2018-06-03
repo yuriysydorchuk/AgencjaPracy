@@ -3,7 +3,7 @@ from ckeditor.fields import RichTextField
 from taggit.managers import TaggableManager
 from django.utils import timezone
 # Create your models here.
-
+# new commit
 class Vacanse(models.Model):
     title = models.CharField(max_length=255)
     image = models.ImageField(upload_to='news', default='/users/avatar.png')
