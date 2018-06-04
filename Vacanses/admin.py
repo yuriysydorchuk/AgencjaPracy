@@ -7,13 +7,13 @@ from .forms import VacanseForm
 class VacanseModelAdmin(admin.ModelAdmin):
     form = VacanseForm
     prepopulated_fields = {'title': ('title',)}
-    list_display = ('title', 'datetime', 'author')
+    list_display = ('title', 'datetime', 'organization')
     list_filter = ('datetime',)
 
-    def save_model(self, request, obj, form, change):
-        if not obj.author.id:
-            obj.author = request.user
-        obj.last_modified_by = request.user
-        obj.save()
+    # def save_model(self, request, obj, form, change):
+    #     if not obj.organization.id:
+    #         obj.author = request.user
+    #     obj.last_modified_by = request.user
+    #     obj.save()
 
 # Register your models here.
