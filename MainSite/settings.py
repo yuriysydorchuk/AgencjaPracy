@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'taggit',
     'star_ratings',
     'ckeditor',
+    'imagekit',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,7 @@ WSGI_APPLICATION = 'MainSite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'agencjapracy',
+        'NAME': 'agencjapracy3',
         'USER': 'root',
         'PASSWORD': 'user1',
         'HOST': 'localhost',
